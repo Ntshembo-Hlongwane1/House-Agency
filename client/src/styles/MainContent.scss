@@ -1,7 +1,7 @@
 .MainContent {
   display: flex;
   flex-flow: column;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   padding: 1rem;
 }
 
@@ -9,4 +9,15 @@
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media screen and (min-width: 769px) {
+  .carousel {
+    width: 50%;
+    margin: 0% auto;
+  }
+
+  .MainContent {
+    align-items: center;
+  }
 }

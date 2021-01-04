@@ -12,7 +12,7 @@ export const MainContent = () => {
         <h3 className="MainContent__headerText">Find Your Dream Home</h3>
       </div>
       <div className="MainContent__content">
-        <Carousel autoPlay={true} infiniteLoop={true}>
+        <Carousel autoPlay={true} infiniteLoop={true} className="carousel">
           <div>
             <img src={picture1} />
             <h5 className="legend">Houses For Sale</h5>

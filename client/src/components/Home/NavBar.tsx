@@ -13,12 +13,12 @@ export const NavBar = () => {
         <h2 className="nav-company-name">Hlongwane Properties</h2>
       </div>
       <div className="nav-bar-center">
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="Search..." className="nav-bar-input-field" />
         <SearchIcon />
       </div>
       <div className="nav-bar-right">
         <div className="right__houseListing">
-          <h4 className="right-nav-link house-listing-text">List Your House</h4>
+          <h4 className="right-nav-link house-listing-text">Sell / Rent</h4>
         </div>
         <Avatar src="" alt="User Profile" className="right-nav-link" />
       </div>
