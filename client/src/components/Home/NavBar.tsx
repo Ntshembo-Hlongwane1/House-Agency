@@ -1,9 +1,11 @@
 import React from 'react';
-import LanguageIcon from '@material-ui/icons/Language';
 import SearchIcon from '@material-ui/icons/Search';
 import Logo from '../../assets/mortgage.svg';
 import { Avatar } from '@material-ui/core';
 import '../../styles/NavBar.scss';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import { UserMenu } from './UserMenu';
 
 export const NavBar = () => {
   return (
@@ -20,7 +22,12 @@ export const NavBar = () => {
         <div className="right__houseListing">
           <h4 className="right-nav-link house-listing-text">Sell / Rent</h4>
         </div>
-        <Avatar src="" alt="User Profile" className="right-nav-link" />
+        <Popup
+          trigger={<Avatar src="" alt="User Profile" className="right-nav-link" />}
+          position="bottom right"
+        >
+          <UserMenu />
+        </Popup>
       </div>
     </nav>
   );
