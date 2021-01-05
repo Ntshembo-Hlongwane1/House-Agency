@@ -12,7 +12,7 @@ RUN npm run build
 
 COPY .env ./dist/
 
-WORKDIR ./dist
+WORKDIR /usr/app/dist
 
 EXPOSE 5000
 
