@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import { connect, ConnectionOptions } from 'mongoose';
 import { config } from 'dotenv';
+import HouseListingRoute from './Routes/HouseListing/HouseListing';
 config();
 
 //=========================================================Global Variables=====================================================
@@ -34,6 +35,9 @@ connect(MongoURI, connectionOptions, (error) => {
   }
   console.log('Connection to MongoDB was successful');
 });
+
+//==========================================================Api Endpoints=======================================================
+Server.use(HouseListingRoute);
 
 //====================================================Server connection & Configs===============================================
 const PORT = process.env.PORT || 5000;

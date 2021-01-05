@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    container_name: docker-house-agency-server
+    restart: always
+    build: .
+    ports:
+      - '4000:5000'
