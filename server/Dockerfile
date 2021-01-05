@@ -6,17 +6,14 @@ COPY package.json ./
 
 RUN npm i
 
-ADD . .
+COPY . .
 
 RUN npm run build
 
 COPY .env ./dist/
 
-WORKDIR /usr/app/dist
+WORKDIR /dist
 
 EXPOSE 5000
 
-CMD node server.js
-
-
-
+CMD node src/server.js
